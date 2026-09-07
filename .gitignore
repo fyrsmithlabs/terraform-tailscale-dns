@@ -1,0 +1,46 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+terraform.tfstate.d/
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Variable files that commonly contain secrets or environment-specific values.
+# The consuming stack supplies vars; this module ships none.
+*.tfvars
+*.tfvars.json
+
+# Atmos-generated per-component artifacts (regenerated on every plan/apply).
+# A planfile embeds refreshed state — never commit one.
+backend.tf.json
+*.terraform.tfvars.json
+planfile
+*.planfile
+
+# Terraform override files, which are meant to be local-only
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Secrets / env files
+.env
+*.env
+!*.example.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
